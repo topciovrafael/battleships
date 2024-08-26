@@ -1,0 +1,175 @@
+#container{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 60vh;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    background-image: url("1.jpg");
+    background-color: rgba(255, 255, 255, 0.1);
+    background-blend-mode: overlay;
+}
+
+#harta,#harta-2{
+    width: 60vh;
+    height: 60vh;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.rand{
+    width: 60vh;
+    display: flex;
+    height: 100%;
+}
+
+.patrat,.doipat{
+    background-color: lightblue;
+    border: 1px solid gray;   
+    box-sizing: border-box;  
+    padding: 10px;         
+    width: 100%;                 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.patrat:hover,.doipat:hover{
+    cursor: pointer;
+}
+
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+#nimerit{
+    background-color: red;
+}
+  
+#unu-barca{
+    height: 58px;
+    width: 58px;
+    background-color: rgb(255, 196, 0);
+    border: 1px solid black;
+    margin-bottom: 10px;
+    
+}
+
+/* #start{
+    pointer-events: none;
+} */
+
+#doi-barca{
+    height: 58px;
+    width: 116px;
+    background-color: rgb(255, 196, 0);
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#textend{
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+
+#ceata{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    opacity: 0;
+    transition: 400ms;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+
+}
+
+#popup{
+    background-color: white;
+    height: 38%;
+    width: 70vh;
+    position: fixed;
+    border: 1px solid black;
+    border-radius: 10px;
+    scale: 0;
+    transition: 400ms;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "New Amsterdam", sans-serif;
+
+}
+
+#butoane{
+    height: 65px;
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#eitext,#noitext{
+    color: white;
+    font-size: 25px;
+    width: 250px;
+    font-family: "New Amsterdam", sans-serif;
+    text-align: center;
+}
+
+#eitext{
+    margin-left: 25px;
+}
+
+#noitext{
+    margin-right: 25px;
+}
+
+#trei-barca{
+    height: 58px;
+    width: 175px;
+    background-color: rgb(255, 196, 0);
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#patru-barca{
+    height: 58px;
+    width: 232px;
+    background-color: rgb(255, 196, 0);
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#spatiu-barci{
+    display: flex;
+    margin-top: 5%;
+    margin: 0;
+}   
+
+#spatiu-barci>div{
+    margin-right: 5%;
+}
+
+.barca{
+    cursor: pointer;
+}
+
+.barca.rotated {
+    transform: rotate(90deg); /* Rotate the ship by 90 degrees */
+    transform-origin: center center; /* Ensure rotation happens from the center */
+}
